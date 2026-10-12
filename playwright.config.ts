@@ -24,7 +24,8 @@ process.env.CI
   use: {
     baseURL: CONFIG.baseURL,          // <--- UTILISE LE BASEURL SELON L'ENV
     ignoreHTTPSErrors: true,          // <--- RÈGLE TON PROBLÈME DE CERTIFICAT
-    headless: false,
+    headless: !!process.env.CI,
+
 
     trace: 'on-first-retry',
   },
