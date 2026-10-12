@@ -1,0 +1,20 @@
+{
+  "CheckOut": {
+    "billingAddress": "New Address",
+    "firstName": "Emma",
+    "lastName": "Tremblay",
+    "email": "emma.tremblay.test@example.com",
+    "country": "Canada",
+    "state": "Ontario",
+    "city": "Toronto",
+    "address1": "100 Queen Street West",
+    "zipCode": "M5H 2N2",
+    "phone": "4165551234",
+    "creditCardType": "Visa",
+    "cardholderName": "Emma Tremblay",
+    "cardNumber": "4111111111111111",
+    "cardExpirationMonth": "12",
+    "cardExpirationYear": "2030",
+    "cardCode": "123"
+}
+}

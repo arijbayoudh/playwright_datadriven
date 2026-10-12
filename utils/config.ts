@@ -1,3 +1,4 @@
+/// <reference types="node" />
 export type Environment = 'recette' | 'preprod' | 'prod';
 
 interface EnvConfig {

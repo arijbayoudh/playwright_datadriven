@@ -5,7 +5,7 @@ import loginData from '../data/loginData.json';
 
 import ENV from '../utils/config';
 
-const env = process.env.ENV ?? 'recette' as const;
+const env = process.env.ENV ?? 'prod' as const;
 const CONFIG = ENV['prod'];
 
 export { expect };
@@ -24,15 +24,12 @@ export const test = base.extend<MyFixtures>({
       console.log('--- 🟢 SETUP: Connexion utilisateur ---');
 
       await actions.goto(`${CONFIG.baseURL}/login`);
-
-      await loginPage.login(
-        
-loginData.validUser.email
-,
-        loginData.validUser.password
-      );
-
+      await loginPage.login(loginData.validUser.email,loginData.validUser.password);
       await loginPage.assertLoginSuccess();
+     
+      //await actions.goto(`${CONFIG.baseURL}/login`);
+      //await loginPage.login(loginData.invalidUser.email,loginData.invalidUser.password);
+      //await loginPage.assertLoginSuccess();
 
       await use();
     },

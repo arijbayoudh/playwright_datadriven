@@ -1,0 +1,13 @@
+{
+"validFriend": {
+    "yourEmail": "arij.bayoudh@gmail.com",
+    "FriendEmail": "arijaarouja@gmail.com",
+    "Message": "Hi, I’m sending you this item. Hope you find it useful and enjoy it!"
+},
+
+"invalidFriend": {
+    "your Email": "arij.bayoudh@gmail.com",
+    "Friend's Email": "testgmail.com",
+    "Message": "Hi, I’m sending you this item. Hope you find it useful and enjoy it!"
+}
+} 

@@ -27,7 +27,7 @@ export class Hooks {
         fullPage: true
       });
     }
-    await page.close();
+    //await page.close();
   }
 
   /**
